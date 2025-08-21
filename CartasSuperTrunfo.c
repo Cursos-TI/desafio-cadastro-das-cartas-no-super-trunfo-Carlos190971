@@ -27,6 +27,8 @@ int main() {
     float area2;
     float pib2;
     int pontos2;
+    float densidade1, percapita1;
+    float densidade2, percapita2;
 
     // Inicialização 
 
@@ -76,6 +78,13 @@ int main() {
     scanf("%d", &pontos2);
     printf("\n");
 
+    //Calculo de densidade, renda percapita
+
+    densidade1 = populacao1 / area1;
+    densidade2 = populacao2 / area2;
+    percapita1 = pib1 / populacao1;
+    percapita2 = pib2 / populacao2;
+
 
     //Exibição da carta 01
     printf("Carta: %s\n", codigo1);
@@ -84,8 +93,11 @@ int main() {
     printf("Populacao: %d\n", populacao1);
     printf("Area: %.2f Km²\n", area1);
     printf("PIB: %.2f Bilhões de reais\n", pib1);
-    printf("Pontos Turisticos: %d\n", pontos1);
+    printf("Pontos Turisticos: %d\n", pontos1);    
+    printf("Densidade: %.2f  Hab/Km²\n", densidade1);
+    printf("PIB percapita: %.2f  reais", percapita1 );
     printf("\n");
+    
     
     //Exibição da carta 02
     printf("Carta: %s\n", codigo2);
@@ -94,8 +106,12 @@ int main() {
     printf("Populacao: %d\n", populacao2);
     printf("Area: %.2f Km²\n", area2);
     printf("PIB: %.2f Bilhões de reais\n", pib2);
-    printf("Pontos Turisticos: %d\n", pontos2);
-    printf("\n");
+    printf("Pontos Turisticos: %d\n", pontos2);    
+    printf("Densidade: %.2f  Hab/Km²\n", densidade2);
+    printf("PIB percapita: %.2f  reais", percapita2 );   
+       
+
+
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
